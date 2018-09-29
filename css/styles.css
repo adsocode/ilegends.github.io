@@ -1,0 +1,133 @@
+/*  INITIALIZATION  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 13px;
+    /*background: lightseagreen;*/
+    background: url(../images/bg11.jpg);
+}
+a{
+    font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    text-decoration: none;
+    color: white;
+}
+ul,ol{
+    list-style: none;
+}
+.border{
+    border-style: dotted;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+/*  HEADWRAPPER */
+#navbar{
+    position: fixed;
+    background: #000;
+    padding: 4px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+    
+    background: #268be0;
+    padding: 10px 10px 10px 10px;
+    
+    text-shadow: 1px 1px 1px black; /* 1px Horizontal, 1px Vertical, 1px Blur */
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.7);
+   
+    box-shadow: inset 0px 2px rgba(0,0,0,0.2), inset 0px 4px rgba(0,0,0,0.1),
+                inset 0px 10px 20px rgba(0,0,0,0.25), inset 0px -15px 30px rgba(0,0,0,0.3);
+}
+#home{
+    display: inline-block;
+}
+@media only screen and (min-width:968px){
+    #home{
+        margin-left:-80px;
+    }
+} 
+
+@media only screen and(min-width: 1200px){
+        #navbar #navlist ul{
+            display: block;
+        }
+        #navbar #bars{
+            display: none;
+        }
+}
+@media only screen and (max-width: 1200px){
+	#navbar #navlist ul{
+            display: none;
+        }
+        #navbar #bars{
+            color: white;
+            display: inline-block;
+        }
+}
+
+#bars{
+    display: none;
+    float: right;
+    font-size: 18px;
+    padding: 7px;
+}
+
+
+.menu li{
+    display: inline-block;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    letter-spacing: 1px;   
+    border-radius: 2px; 
+    
+    transition: background 0.5s linear 0s, color 0.5s linear 0s;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.6);
+}
+
+
+/*  FOOTER  */
+#footer{
+    position: relative;
+    bottom: 0px;
+    top: 150px;
+    margin: 0px;
+    left: 0px; right: 0px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.7);
+    box-shadow: inset 0px 2px rgba(0,0,0,0.2), inset 0px 4px rgba(0,0,0,0.1),
+                inset 0px 10px 20px rgba(0,0,0,0.25), inset 0px -15px 30px rgba(0,0,0,0.3);
+}
+.footerParts{
+    border: rgba(255,255,255,1);
+}
+.footerParts h3{
+    color: white;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+.footerParts a{
+    padding: 4px;
+    margin-right: 4px;
+}
+.footerParts span{
+    margin-left: 3px;
+}
+.footerParts a:hover{
+    background: rgba(255,255,255,0.4);
+}
+#copyright{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
